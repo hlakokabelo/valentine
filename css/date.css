@@ -1,4 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
 
+.form-group {
+  width: min(90%, 400px);
+}
 
 input,
 select {
