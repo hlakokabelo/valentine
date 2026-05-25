@@ -114,6 +114,6 @@ body {
 /* Large desktop */
 @media (min-width: 1200px) {
   .dessert-selection {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
