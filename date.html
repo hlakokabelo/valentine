@@ -3,97 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pick a Date</title>
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-      }
-
-      body {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(
-          135deg,
-          rgb(255, 228, 230),
-          rgb(255, 245, 247)
-        );
-      }
-
-      .card {
-        background: white;
-        padding: 2rem;
-        border-radius: 20px;
-        width: 90%;
-        max-width: 400px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        text-align: center;
-      }
-
-      h1 {
-        margin-bottom: 1rem;
-        color: #333;
-      }
-
-      p {
-        color: #666;
-        margin-bottom: 1.5rem;
-        line-height: 1.5;
-      }
-
-      input {
-        width: 100%;
-        padding: 12px;
-        border-radius: 10px;
-        border: 1px solid #ddd;
-        margin-bottom: 1rem;
-        font-size: 1rem;
-      }
-
-      button {
-        width: 100%;
-        padding: 12px;
-        border: none;
-        border-radius: 10px;
-        background: #ff6b81;
-        color: white;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: 0.2s;
-      }
-
-      button:hover {
-        transform: scale(1.03);
-        background: #ff526d;
-      }
-    </style>
+    <title>Date</title>
+    <link rel="stylesheet" href="css/date.css" />
   </head>
-
   <body>
-    <div class="card">
-      <h1>Would you like to go out with me?</h1>
-
-      <p>
-        Pick a day that suits you best.  
-        No pressure… unless your calendar is secretly avoiding me.
-      </p>
-
-      <form action="food.html">
-        <input
-          type="date"
-          required
-          aria-label="Choose a date"
-        />
-
-        <button type="submit">
-          Choose this day ✨
+    <h1 title="choose a date">Are you free on ...</h1>
+    <form class="form-group">
+      <label>Which day: (select a date)</label>
+      <div>
+        <input type="date" />
+        <button class="button" type="submit" formaction="food.html">
+          Submit
         </button>
-      </form>
-    </div>
+      </div>
+    </form>
   </body>
 </html>
