@@ -8,10 +8,6 @@ body {
   margin: 0;
 }
 
-.form-group {
-  width: min(90%, 400px);
-}
-
 input,
 select {
   width: 100%;
