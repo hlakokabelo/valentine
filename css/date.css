@@ -1,12 +1,24 @@
+
+
 input,
 select {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 16px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border: 1px solid #e5dede;
+  border-radius: 16px;
   font-size: 16px;
+  background: white;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
   outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #ff9eb5;
+  box-shadow: 0 0 0 4px rgba(255, 158, 181, 0.15);
+  transform: translateY(-2px);
 }
 
 select {
@@ -14,8 +26,31 @@ select {
 }
 
 .button {
-  padding: 12px 20px;
+  width: 100%;
+  padding: 14px;
   border: none;
-  border-radius: 12px;
+  border-radius: 16px;
+  background: #ff8fab;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.button:hover {
+  background: #ff7296;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 114, 150, 0.25);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 24px;
+  font-weight: 600;
 }
