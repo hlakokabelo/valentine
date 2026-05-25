@@ -21,7 +21,7 @@ body {
 
 .activity-selection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 24px;
   max-width: 1000px;
   margin: 0 auto 40px;
@@ -114,6 +114,6 @@ body {
 /* Large desktop */
 @media (min-width: 1200px) {
   .activity-selection {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
