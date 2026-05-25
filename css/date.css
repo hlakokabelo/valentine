@@ -1,11 +1,39 @@
 body {
   text-align: center;
-  margin-top: 30px;
-  font-family: courier;
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Courier, monospace;
   background-color: #fff5e4;
   color: #ff9494;
+  line-height: 1.6;
 }
 
+/* Form container */
+.form-group {
+  max-width: 500px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.55);
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  backdrop-filter: blur(4px);
+}
+
+h1 {
+  margin-bottom: 12px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #ff9494;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Inputs */
 input,
 select {
   width: 100%;
@@ -16,14 +44,14 @@ select {
   font-size: 16px;
   background: white;
   box-sizing: border-box;
-  transition: all 0.25s ease;
+  transition: 0.25s ease;
   outline: none;
 }
 
 input:focus,
 select:focus {
   border-color: #ff9eb5;
-  box-shadow: 0 0 0 4px rgba(255, 158, 181, 0.15);
+  box-shadow: 0 0 0 4px rgba(255,158,181,0.15);
   transform: translateY(-2px);
 }
 
@@ -31,32 +59,51 @@ select {
   cursor: pointer;
 }
 
+/* Button */
 .button {
   width: 100%;
-  padding: 14px;
+  padding: 15px;
   border: none;
   border-radius: 16px;
   background: #ff8fab;
   color: white;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: 0.25s ease;
 }
 
 .button:hover {
   background: #ff7296;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 114, 150, 0.25);
+  box-shadow: 0 8px 20px rgba(255,114,150,0.25);
 }
 
 .button:active {
   transform: scale(0.98);
 }
 
-h1 {
-  text-align: center;
-  color: #333;
+/* Small helper text */
+p {
+  color: #888;
+  margin-top: -8px;
   margin-bottom: 24px;
-  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .form-group {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
