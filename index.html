@@ -15,7 +15,33 @@
     <br />
     <img src="cat.gif" alt="cat asking question" class="responsive" />
 
-    <script>
+   
+
+<script>
+const questions = [
+  "Noluthando Mdluli, would you go out with me? 🥺",
+  "Noluthando Mdluli… any chance I could take you on a date? 🌹",
+  "Noluthando Mdluli, would you let me steal a little of your time for a date? ✨",
+  "Hey Noluthando Mdluli, what if we turned one day into our first date? 🥹",
+  "Noluthando Mdluli, can I have the honor of taking you out sometime? 🌷",
+  "So… Noluthando Mdluli, would saying yes to a date with me be completely impossible? 🥺👉👈",
+  "Noluthando Mdluli, would you be my favorite notification and go out with me? 😭❤️",
+  "Dear Noluthando Mdluli, I have a tiny question with huge consequences… date? 🥹",
+  "Noluthando Mdluli, if I asked you out right now… would your answer make me smile? 🌸",
+  "Plot twist: Noluthando Mdluli says yes to going out with me 💌",
+  "Noluthando Mdluli, will you risk making a beautiful memory with me? ✨",
+  "Noluthando Mdluli, I think you’re gorgeous… would you go out with me? 🥺❤️",
+  "I can’t stop looking forward to seeing you… but first, Noluthando Mdluli, will you go out with me? 🥹🌹",
+  "Noluthando Mdluli, time drags its feet waiting for you… would you go out with me? ❤️"
+];
+
+const randomQuestion =
+  questions[Math.floor(Math.random() * questions.length)];
+
+document.getElementById("valentineQuestion").innerHTML =
+  `<b>${randomQuestion}</b>`;
+
+
       document
         .getElementById("noButton")
         .addEventListener("click", function () {
