@@ -296,9 +296,10 @@
 
 <div class="container">
   <!-- main romantic headline -->
-  <div id="thankyou">
-    ✨ I can’t wait to see you🥺🤭… <br> <p>feels like time’s dragging its feet on purpose 🕰️💫💔</p>
-  </div>
+ 
+<div id="thankyou"></div>
+
+
 
   <!-- three animated flowers with different personalities -->
   <div class="flower">
@@ -348,6 +349,19 @@
     </div>
   </div>
 
-    
+    <script>
+  const messages = [
+    "✨ I can’t wait to see you 🥺🤭… feels like time’s dragging its feet on purpose 🕰️💫💔",
+    "🌙 If time had a heart, I swear it would beat slower just for this moment… I can’t wait to see you 🥺✨",
+    "💫 I don’t know what I’m more excited for—seeing you or how time suddenly forgot how to move 🕰️🥺",
+    "🌸 Something about you makes even seconds feel shy… I can’t wait to see you 🤭✨",
+    "🫶🏽 Time’s been acting suspiciously slow… almost like it knows I’m thinking of you 💫🥺",
+    "🌷 I can already feel the moment before it happens… I can’t wait to see you 🥺💖",
+    "✨ Every tick of the clock feels like it’s teasing me now… I can’t wait to see you 🤭🕰️",
+  ];
+
+  const randomIndex = Math.floor(Math.random() * messages.length);
+  document.getElementById("thankyou").textContent = messages[randomIndex];
+</script>
 </body>
 </html>
