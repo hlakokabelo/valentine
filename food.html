@@ -60,5 +60,22 @@
     <button class="button" onclick="location.href='dessert.html'">
        Continue →	
     </button>
+
+
+<script>
+  const foodQuestions = [
+    "🍽️ What food would you like to eat?",
+    "🍜 Be honest… what are we really craving right now?",
+    "🍕 If your stomach had a vote, what would it pick?",
+    "🥘 Choose wisely… this decision shapes the vibe of the day",
+    "🍔 What’s calling your name louder than everything else?",
+    "🌮 If we had to eat one thing forever… what are you choosing?",
+    "🍱 Serious question: what’s the food mood today?"
+  ];
+
+  const chosen = foodQuestions[Math.floor(Math.random() * foodQuestions.length)];
+
+  document.getElementById("foodquestion").innerHTML = "<b>" + chosen + "</b>";
+</script>
   </body>
 </html>
