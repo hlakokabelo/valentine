@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/dessert.css" />
   </head>
   <body>
-    <div id="dessertquestion">Which dessert we eatin cuh</div>
+    <div id="dessertquestion">Which dessert we eatin babe</div>
 
     <div class="dessert-selection">
       <div class="dessert-item">
@@ -50,5 +50,19 @@
     <button class="button" onclick="location.href='activities.html'">
        Continue →
     </button>
+
+<script>
+  const questions = [
+    "🍰 Which dessert we eatin babe?",
+    "🍩 Pick your poison… sweet edition 😌",
+    "🍫 Alright be serious now—what’s the dessert move? 👀",
+    "🍦 Choose wisely… this decision has emotional weight 🥺",
+    "🧁 If we had to share one dessert right now, what’s it saying?",
+    "🍓 Your mission: pick a dessert. No pressure. (but also… pressure) 😭✨",
+  ];
+
+  const pick = questions[Math.floor(Math.random() * questions.length)];
+  document.getElementById("dessertquestion").textContent = pick;
+</script>
   </body>
 </html>
