@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -47,22 +47,22 @@
         >
       </div>
     </div>
-    <button class="button" onclick="location.href='activities.html'">
-       Continue →
+    <button class="button" onclick="location.href = 'activities.html'">
+      Continue →
     </button>
 
-<script>
-  const questions = [
-    "🍰 Which dessert we eatin babe?",
-    "🍩 Pick your poison… sweet edition 😌",
-    "🍫 Alright be serious now—what’s the dessert move? 👀",
-    "🍦 Choose wisely… this decision has emotional weight 🥺",
-    "🧁 If we had to share one dessert right now, what’s it saying?",
-    "🍓 Your mission: pick a dessert. No pressure. (but also… pressure) 😭✨",
-  ];
+    <script>
+      const questions = [
+        "🍰 Which dessert we eatin babe?",
+        "🍩 Pick your poison… sweet edition 😌",
+        "🍫 Alright be serious now—what’s the dessert move? 👀",
+        "🍦 Choose wisely… this decision has emotional weight 🥺",
+        "🧁 If we had to share one dessert right now, what’s it saying?",
+        "🍓 Your mission: pick a dessert. No pressure. (but also… pressure) 😭✨",
+      ];
 
-  const pick = questions[Math.floor(Math.random() * questions.length)];
-  document.getElementById("dessertquestion").textContent = pick;
-</script>
+      const pick = questions[Math.floor(Math.random() * questions.length)];
+      document.getElementById("dessertquestion").textContent = pick;
+    </script>
   </body>
 </html>
